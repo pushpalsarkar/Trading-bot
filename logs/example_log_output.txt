@@ -1,0 +1,12 @@
+2026-07-01 17:48:09 | INFO     | trading_bot | Order request summary: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01}
+2026-07-01 17:48:09 | INFO     | trading_bot | REQUEST -> futures_create_order({'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01})
+2026-07-01 17:48:09 | INFO     | trading_bot | RESPONSE <- futures_create_order: {'orderId': 100000001, 'symbol': 'BTCUSDT', 'status': 'FILLED', 'side': 'BUY', 'type': 'MARKET', 'executedQty': '0.010', 'avgPrice': '60123.40'}
+2026-07-01 17:48:09 | INFO     | trading_bot | Order placed successfully: {'orderId': 100000001, 'status': 'FILLED', 'executedQty': '0.010', 'avgPrice': '60123.40', 'side': 'BUY', 'type': 'MARKET', 'symbol': 'BTCUSDT'}
+2026-07-01 17:48:09 | INFO     | trading_bot | Order request summary: {'symbol': 'ETHUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.05, 'price': 3200.5}
+2026-07-01 17:48:09 | INFO     | trading_bot | REQUEST -> futures_create_order({'symbol': 'ETHUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.05, 'price': 3200.5, 'timeInForce': 'GTC'})
+2026-07-01 17:48:09 | INFO     | trading_bot | RESPONSE <- futures_create_order: {'orderId': 100000002, 'symbol': 'ETHUSDT', 'status': 'NEW', 'side': 'SELL', 'type': 'LIMIT', 'executedQty': '0.000', 'avgPrice': '0.00'}
+2026-07-01 17:48:09 | INFO     | trading_bot | Order placed successfully: {'orderId': 100000002, 'status': 'NEW', 'executedQty': '0.000', 'avgPrice': '0.00', 'side': 'SELL', 'type': 'LIMIT', 'symbol': 'ETHUSDT'}
+2026-07-01 17:48:09 | INFO     | trading_bot | Order request summary: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01}
+2026-07-01 17:48:09 | INFO     | trading_bot | REQUEST -> futures_create_order({'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01})
+2026-07-01 17:48:09 | ERROR    | trading_bot | futures_create_order failed for params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01} | error=APIError(code=-2010): Account has insufficient balance for requested action.
+2026-07-01 17:48:09 | ERROR    | trading_bot | Binance API rejected the order: APIError(code=-2010): Account has insufficient balance for requested action.
